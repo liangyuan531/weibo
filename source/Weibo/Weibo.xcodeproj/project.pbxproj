@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */; };
+		EC9A31261EC5E305001C4E7C /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */; };
+		EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31271EC5E339001C4E7C /* WBBaseController.swift */; };
+		EC9A312A1EC5E39A001C4E7C /* WBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31291EC5E39A001C4E7C /* WBHomeViewController.swift */; };
+		EC9A312C1EC5E3BF001C4E7C /* WBMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A312B1EC5E3BF001C4E7C /* WBMessageViewController.swift */; };
+		EC9A312E1EC5E3E3001C4E7C /* WBDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A312D1EC5E3E3001C4E7C /* WBDiscoverViewController.swift */; };
+		EC9A31301EC5E3EF001C4E7C /* WBProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A312F1EC5E3EF001C4E7C /* WBProfileViewController.swift */; };
+		EC9A314B1EC5EAF5001C4E7C /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31341EC5EAF5001C4E7C /* NSArray+Log.m */; };
+		EC9A314C1EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31361EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.m */; };
+		EC9A314D1EC5EAF5001C4E7C /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31381EC5EAF5001C4E7C /* NSObject+CZRuntime.m */; };
+		EC9A314E1EC5EAF5001C4E7C /* NSString+CZBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A313A1EC5EAF5001C4E7C /* NSString+CZBase64.m */; };
+		EC9A314F1EC5EAF5001C4E7C /* NSString+CZHash.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A313C1EC5EAF5001C4E7C /* NSString+CZHash.m */; };
+		EC9A31501EC5EAF5001C4E7C /* NSString+CZPath.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A313E1EC5EAF5001C4E7C /* NSString+CZPath.m */; };
+		EC9A31511EC5EAF5001C4E7C /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31401EC5EAF5001C4E7C /* UIButton+CZAddition.m */; };
+		EC9A31521EC5EAF5001C4E7C /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31421EC5EAF5001C4E7C /* UIColor+CZAddition.m */; };
+		EC9A31531EC5EAF5001C4E7C /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31441EC5EAF5001C4E7C /* UILabel+CZAddition.m */; };
+		EC9A31541EC5EAF5001C4E7C /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31461EC5EAF5001C4E7C /* UIScreen+CZAddition.m */; };
+		EC9A31551EC5EAF5001C4E7C /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31481EC5EAF5001C4E7C /* UIView+CZAddition.m */; };
+		EC9A31561EC5EAF5001C4E7C /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = EC9A314A1EC5EAF5001C4E7C /* UIViewController+CZAddition.m */; };
+		EC9A315A1EC5F1BB001C4E7C /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31591EC5F1BB001C4E7C /* Bundle+Extensions.swift */; };
+		ECD361211EC480920013E593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD361201EC480920013E593 /* AppDelegate.swift */; };
+		ECD361281EC480920013E593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD361271EC480920013E593 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
+		EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
+		EC9A31271EC5E339001C4E7C /* WBBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseController.swift; sourceTree = "<group>"; };
+		EC9A31291EC5E39A001C4E7C /* WBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBHomeViewController.swift; sourceTree = "<group>"; };
+		EC9A312B1EC5E3BF001C4E7C /* WBMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMessageViewController.swift; sourceTree = "<group>"; };
+		EC9A312D1EC5E3E3001C4E7C /* WBDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDiscoverViewController.swift; sourceTree = "<group>"; };
+		EC9A312F1EC5E3EF001C4E7C /* WBProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBProfileViewController.swift; sourceTree = "<group>"; };
+		EC9A31321EC5EAF5001C4E7C /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		EC9A31331EC5EAF5001C4E7C /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		EC9A31341EC5EAF5001C4E7C /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		EC9A31351EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		EC9A31361EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		EC9A31371EC5EAF5001C4E7C /* NSObject+CZRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZRuntime.h"; sourceTree = "<group>"; };
+		EC9A31381EC5EAF5001C4E7C /* NSObject+CZRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZRuntime.m"; sourceTree = "<group>"; };
+		EC9A31391EC5EAF5001C4E7C /* NSString+CZBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZBase64.h"; sourceTree = "<group>"; };
+		EC9A313A1EC5EAF5001C4E7C /* NSString+CZBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZBase64.m"; sourceTree = "<group>"; };
+		EC9A313B1EC5EAF5001C4E7C /* NSString+CZHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZHash.h"; sourceTree = "<group>"; };
+		EC9A313C1EC5EAF5001C4E7C /* NSString+CZHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZHash.m"; sourceTree = "<group>"; };
+		EC9A313D1EC5EAF5001C4E7C /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
+		EC9A313E1EC5EAF5001C4E7C /* NSString+CZPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CZPath.m"; sourceTree = "<group>"; };
+		EC9A313F1EC5EAF5001C4E7C /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A31401EC5EAF5001C4E7C /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31411EC5EAF5001C4E7C /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A31421EC5EAF5001C4E7C /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31431EC5EAF5001C4E7C /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A31441EC5EAF5001C4E7C /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31451EC5EAF5001C4E7C /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A31461EC5EAF5001C4E7C /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31471EC5EAF5001C4E7C /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A31481EC5EAF5001C4E7C /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31491EC5EAF5001C4E7C /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		EC9A314A1EC5EAF5001C4E7C /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		EC9A31571EC5EB1F001C4E7C /* Weibo-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo-bridge.h"; sourceTree = "<group>"; };
+		EC9A31591EC5F1BB001C4E7C /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		ECD3611D1EC480920013E593 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD361201EC480920013E593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECD361271EC480920013E593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECD3612C1EC480920013E593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECD3611A1EC480920013E593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC9A31191EC5E20E001C4E7C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A311C1EC5E20E001C4E7C /* View */,
+				EC9A311A1EC5E20E001C4E7C /* Model */,
+				EC9A311B1EC5E20E001C4E7C /* Tools */,
+				EC9A31221EC5E20E001C4E7C /* ViewModel */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC9A311A1EC5E20E001C4E7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC9A311B1EC5E20E001C4E7C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31581EC5F1AD001C4E7C /* Extensions */,
+				EC9A31311EC5EAF5001C4E7C /* Additions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		EC9A311C1EC5E20E001C4E7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A311F1EC5E20E001C4E7C /* Main */,
+				EC9A311D1EC5E20E001C4E7C /* Discover */,
+				EC9A311E1EC5E20E001C4E7C /* Home */,
+				EC9A31201EC5E20E001C4E7C /* Message */,
+				EC9A31211EC5E20E001C4E7C /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC9A311D1EC5E20E001C4E7C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A312D1EC5E3E3001C4E7C /* WBDiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		EC9A311E1EC5E20E001C4E7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31291EC5E39A001C4E7C /* WBHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EC9A311F1EC5E20E001C4E7C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */,
+				EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */,
+				EC9A31271EC5E339001C4E7C /* WBBaseController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EC9A31201EC5E20E001C4E7C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A312B1EC5E3BF001C4E7C /* WBMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		EC9A31211EC5E20E001C4E7C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A312F1EC5E3EF001C4E7C /* WBProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EC9A31221EC5E20E001C4E7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC9A31311EC5EAF5001C4E7C /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31321EC5EAF5001C4E7C /* CZAdditions.h */,
+				EC9A31331EC5EAF5001C4E7C /* NSArray+Log.h */,
+				EC9A31341EC5EAF5001C4E7C /* NSArray+Log.m */,
+				EC9A31351EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.h */,
+				EC9A31361EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.m */,
+				EC9A31371EC5EAF5001C4E7C /* NSObject+CZRuntime.h */,
+				EC9A31381EC5EAF5001C4E7C /* NSObject+CZRuntime.m */,
+				EC9A31391EC5EAF5001C4E7C /* NSString+CZBase64.h */,
+				EC9A313A1EC5EAF5001C4E7C /* NSString+CZBase64.m */,
+				EC9A313B1EC5EAF5001C4E7C /* NSString+CZHash.h */,
+				EC9A313C1EC5EAF5001C4E7C /* NSString+CZHash.m */,
+				EC9A313D1EC5EAF5001C4E7C /* NSString+CZPath.h */,
+				EC9A313E1EC5EAF5001C4E7C /* NSString+CZPath.m */,
+				EC9A313F1EC5EAF5001C4E7C /* UIButton+CZAddition.h */,
+				EC9A31401EC5EAF5001C4E7C /* UIButton+CZAddition.m */,
+				EC9A31411EC5EAF5001C4E7C /* UIColor+CZAddition.h */,
+				EC9A31421EC5EAF5001C4E7C /* UIColor+CZAddition.m */,
+				EC9A31431EC5EAF5001C4E7C /* UILabel+CZAddition.h */,
+				EC9A31441EC5EAF5001C4E7C /* UILabel+CZAddition.m */,
+				EC9A31451EC5EAF5001C4E7C /* UIScreen+CZAddition.h */,
+				EC9A31461EC5EAF5001C4E7C /* UIScreen+CZAddition.m */,
+				EC9A31471EC5EAF5001C4E7C /* UIView+CZAddition.h */,
+				EC9A31481EC5EAF5001C4E7C /* UIView+CZAddition.m */,
+				EC9A31491EC5EAF5001C4E7C /* UIViewController+CZAddition.h */,
+				EC9A314A1EC5EAF5001C4E7C /* UIViewController+CZAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		EC9A31581EC5F1AD001C4E7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31591EC5F1BB001C4E7C /* Bundle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECD361141EC480920013E593 = {
+			isa = PBXGroup;
+			children = (
+				ECD3611F1EC480920013E593 /* Weibo */,
+				ECD3611E1EC480920013E593 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD3611E1EC480920013E593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD3611D1EC480920013E593 /* Weibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD3611F1EC480920013E593 /* Weibo */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31191EC5E20E001C4E7C /* Classes */,
+				ECD361201EC480920013E593 /* AppDelegate.swift */,
+				EC9A31571EC5EB1F001C4E7C /* Weibo-bridge.h */,
+				ECD361271EC480920013E593 /* Assets.xcassets */,
+				ECD3612C1EC480920013E593 /* Info.plist */,
+			);
+			path = Weibo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD3611C1EC480920013E593 /* Weibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD3612F1EC480920013E593 /* Build configuration list for PBXNativeTarget "Weibo" */;
+			buildPhases = (
+				ECD361191EC480920013E593 /* Sources */,
+				ECD3611A1EC480920013E593 /* Frameworks */,
+				ECD3611B1EC480920013E593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Weibo;
+			productName = Weibo;
+			productReference = ECD3611D1EC480920013E593 /* Weibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD361151EC480920013E593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WB;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Liang Yuan";
+				TargetAttributes = {
+					ECD3611C1EC480920013E593 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MZS7LE389G;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ECD361181EC480920013E593 /* Build configuration list for PBXProject "Weibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD361141EC480920013E593;
+			productRefGroup = ECD3611E1EC480920013E593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD3611C1EC480920013E593 /* Weibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD3611B1EC480920013E593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD361281EC480920013E593 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD361191EC480920013E593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC9A31521EC5EAF5001C4E7C /* UIColor+CZAddition.m in Sources */,
+				EC9A314B1EC5EAF5001C4E7C /* NSArray+Log.m in Sources */,
+				EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */,
+				EC9A31531EC5EAF5001C4E7C /* UILabel+CZAddition.m in Sources */,
+				EC9A314C1EC5EAF5001C4E7C /* NSAttributedString+CZAdditon.m in Sources */,
+				EC9A31561EC5EAF5001C4E7C /* UIViewController+CZAddition.m in Sources */,
+				EC9A315A1EC5F1BB001C4E7C /* Bundle+Extensions.swift in Sources */,
+				EC9A314E1EC5EAF5001C4E7C /* NSString+CZBase64.m in Sources */,
+				EC9A31301EC5E3EF001C4E7C /* WBProfileViewController.swift in Sources */,
+				EC9A312E1EC5E3E3001C4E7C /* WBDiscoverViewController.swift in Sources */,
+				EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */,
+				EC9A31511EC5EAF5001C4E7C /* UIButton+CZAddition.m in Sources */,
+				EC9A31541EC5EAF5001C4E7C /* UIScreen+CZAddition.m in Sources */,
+				EC9A312A1EC5E39A001C4E7C /* WBHomeViewController.swift in Sources */,
+				EC9A314D1EC5EAF5001C4E7C /* NSObject+CZRuntime.m in Sources */,
+				ECD361211EC480920013E593 /* AppDelegate.swift in Sources */,
+				EC9A31261EC5E305001C4E7C /* WBNavigationController.swift in Sources */,
+				EC9A31501EC5EAF5001C4E7C /* NSString+CZPath.m in Sources */,
+				EC9A31551EC5EAF5001C4E7C /* UIView+CZAddition.m in Sources */,
+				EC9A314F1EC5EAF5001C4E7C /* NSString+CZHash.m in Sources */,
+				EC9A312C1EC5E3BF001C4E7C /* WBMessageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ECD3612D1EC480920013E593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECD3612E1EC480920013E593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD361301EC480920013E593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MZS7LE389G;
+				INFOPLIST_FILE = Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YL.Weibotemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weibo/Weibo-bridge.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ECD361311EC480920013E593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = MZS7LE389G;
+				INFOPLIST_FILE = Weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YL.Weibotemp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Weibo/Weibo-bridge.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD361181EC480920013E593 /* Build configuration list for PBXProject "Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD3612D1EC480920013E593 /* Debug */,
+				ECD3612E1EC480920013E593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD3612F1EC480920013E593 /* Build configuration list for PBXNativeTarget "Weibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD361301EC480920013E593 /* Debug */,
+				ECD361311EC480920013E593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECD361151EC480920013E593 /* Project object */;
+}
