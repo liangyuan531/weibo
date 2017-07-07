@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0E597D1F0F08F60032419C /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */; };
 		EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */; };
 		EC9A31261EC5E305001C4E7C /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */; };
 		EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31271EC5E339001C4E7C /* WBBaseController.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
 		EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
 		EC9A31271EC5E339001C4E7C /* WBBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0E597B1F0F08D70032419C /* test */ = {
+			isa = PBXGroup;
+			children = (
+				EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		EC9A31191EC5E20E001C4E7C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		EC9A311F1EC5E20E001C4E7C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EC0E597B1F0F08D70032419C /* test */,
 				EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */,
 				EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */,
 				EC9A31271EC5E339001C4E7C /* WBBaseController.swift */,
@@ -319,6 +330,7 @@
 				EC9A31561EC5EAF5001C4E7C /* UIViewController+CZAddition.m in Sources */,
 				EC9A315A1EC5F1BB001C4E7C /* Bundle+Extensions.swift in Sources */,
 				EC9A314E1EC5EAF5001C4E7C /* NSString+CZBase64.m in Sources */,
+				EC0E597D1F0F08F60032419C /* WBDemoViewController.swift in Sources */,
 				EC9A31301EC5E3EF001C4E7C /* WBProfileViewController.swift in Sources */,
 				EC9A312E1EC5E3E3001C4E7C /* WBDiscoverViewController.swift in Sources */,
 				EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */,

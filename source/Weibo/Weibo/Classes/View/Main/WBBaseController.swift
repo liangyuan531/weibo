@@ -13,7 +13,12 @@ class WBBaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupUI()
+    }
+}
+
+extension WBBaseController{
+    func setupUI(){
         view.backgroundColor = UIColor.cz_random()
     }
-
 }
