@@ -31,5 +31,6 @@ extension WBBaseController{
         //set item to bar
         navigationBar.items = [navItem]
         navigationBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.darkGray]
     }
 }

@@ -23,7 +23,7 @@ class WBNavigationController: UINavigationController {
                 if childViewControllers.count == 1 {
                     title = childViewControllers.first?.title ?? "Back"
                 }
-                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(back))
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(back), isBack:true)
             }
         }
                 super.pushViewController(viewController, animated: true)
