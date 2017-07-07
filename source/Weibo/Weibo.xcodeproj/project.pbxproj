@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC0E597D1F0F08F60032419C /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */; };
+		EC0E597F1F0F162F0032419C /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E597E1F0F162F0032419C /* UIBarButtonItem+Extensions.swift */; };
 		EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */; };
 		EC9A31261EC5E305001C4E7C /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */; };
 		EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31271EC5E339001C4E7C /* WBBaseController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
+		EC0E597E1F0F162F0032419C /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
 		EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
 		EC9A31271EC5E339001C4E7C /* WBBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				EC9A31591EC5F1BB001C4E7C /* Bundle+Extensions.swift */,
+				EC0E597E1F0F162F0032419C /* UIBarButtonItem+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC9A31521EC5EAF5001C4E7C /* UIColor+CZAddition.m in Sources */,
+				EC0E597F1F0F162F0032419C /* UIBarButtonItem+Extensions.swift in Sources */,
 				EC9A314B1EC5EAF5001C4E7C /* NSArray+Log.m in Sources */,
 				EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */,
 				EC9A31531EC5EAF5001C4E7C /* UILabel+CZAddition.m in Sources */,

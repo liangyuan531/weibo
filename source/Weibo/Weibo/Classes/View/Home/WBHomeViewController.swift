@@ -27,6 +27,10 @@ extension WBHomeViewController{
     override func setupUI() {
         super.setupUI()
         //set navi 
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "friends", style: .plain, target: self, action: #selector(showFriends))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "friends", style: .plain, target: self, action: #selector(showFriends))
+//        let btn: UIButton = UIButton.cz_textButton("Friends", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+//        btn.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Friends", target: self, action: #selector(showFriends))
     }
 }
