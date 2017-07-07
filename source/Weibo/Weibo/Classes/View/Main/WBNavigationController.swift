@@ -9,6 +9,12 @@
 import UIKit
 
 class WBNavigationController: UINavigationController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //hide default navi bar
+        navigationBar.isHidden = true
+    }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if childViewControllers.count > 0{
             viewController.hidesBottomBarWhenPushed = true
