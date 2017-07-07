@@ -15,7 +15,7 @@ class WBHomeViewController: WBBaseController {
     }
     
     func showFriends(){
-        print("xx")
+        //print("xx")
         let vc = WBDemoViewController()
         //vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
@@ -31,6 +31,6 @@ extension WBHomeViewController{
 //        let btn: UIButton = UIButton.cz_textButton("Friends", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
 //        btn.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Friends", target: self, action: #selector(showFriends))
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "Friends", target: self, action: #selector(showFriends))
     }
 }
