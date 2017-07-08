@@ -26,7 +26,7 @@ class WBNavigationController: UINavigationController {
                 vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, target: self, action: #selector(back), isBack:true)
             }
         }
-                super.pushViewController(viewController, animated: true)
+        super.pushViewController(viewController, animated: true)
     }
     
     func back(){
