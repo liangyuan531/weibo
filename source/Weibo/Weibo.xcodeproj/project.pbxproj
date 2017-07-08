@@ -95,6 +95,15 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		EC61FD9C1F1088250051F8FC /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */,
+				EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */,
+			);
+			name = MainController;
+			sourceTree = "<group>";
+		};
 		EC9A31191EC5E20E001C4E7C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EC0E597B1F0F08D70032419C /* test */,
-				EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */,
-				EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */,
+				EC61FD9C1F1088250051F8FC /* MainController */,
 				EC9A31271EC5E339001C4E7C /* WBBaseController.swift */,
 			);
 			path = Main;

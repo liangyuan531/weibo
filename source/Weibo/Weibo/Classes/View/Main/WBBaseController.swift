@@ -9,6 +9,8 @@
 import UIKit
 
 class WBBaseController: UIViewController {
+    var tableView: UITableView?
+    
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0,y:0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
     //override title of naviation bar
@@ -24,9 +26,20 @@ class WBBaseController: UIViewController {
     }
 }
 
+// MARK: - setup interface
 extension WBBaseController{
     func setupUI(){
         view.backgroundColor = UIColor.cz_random()
+        setupNavigationBar()
+        setupTableView()
+    }
+    
+    private func setupTableView(){
+        tableView = UITableView(frame: view.bounds, style: .plain)
+        view.insertSubview(tableView!, belowSubview: navigationBar)
+    }
+    
+    private func setupNavigationBar(){
         view.addSubview(navigationBar)
         //set item to bar
         navigationBar.items = [navItem]
