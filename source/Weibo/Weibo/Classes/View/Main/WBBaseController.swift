@@ -13,6 +13,7 @@ import UIKit
 class WBBaseController: UIViewController{
     var tableView: UITableView?
     var refreshControl: UIRefreshControl?
+    var isPullUp = false
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0,y:0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -24,7 +25,7 @@ class WBBaseController: UIViewController{
     }
     
     func loadData(){
-        
+        refreshControl?.endRefreshing()
     }
     
     override func viewDidLoad() {
@@ -79,5 +80,20 @@ extension WBBaseController: UITableViewDelegate, UITableViewDataSource{
     //子类的数据源方法不需要supper
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+    //上拉刷新
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //判断indexpath是不是最后一行
+        let row = indexPath.row
+        let section = tableView.numberOfSections - 1
+        if row < 0 || section < 0 {
+            return
+        }
+        let count = tableView.numberOfRows(inSection: section)
+        if row == (count - 1) || !isPullUp{
+            //print("pull up refresh")
+            isPullUp = true
+            loadData()
+        }
     }
 }

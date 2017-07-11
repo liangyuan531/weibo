@@ -16,9 +16,13 @@ class WBHomeViewController: WBBaseController {
     override func loadData() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1, execute: {
             for i in 0..<15{
+                if self.isPullUp{
+                    self.statusList.append("pull up \(i)")
+                }
                 self.statusList.insert(i.description, at: 0)
             }
             self.refreshControl?.endRefreshing()
+            self.isPullUp = false
             //print("reload")
             self.tableView?.reloadData()
         })
