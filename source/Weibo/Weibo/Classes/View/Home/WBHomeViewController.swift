@@ -14,9 +14,14 @@ class WBHomeViewController: WBBaseController {
     lazy var statusList = [String]()
     
     override func loadData() {
-        for i in 0..<15{
-            statusList.insert(i.description, at: 0)
-        }
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+1, execute: {
+            for i in 0..<15{
+                self.statusList.insert(i.description, at: 0)
+            }
+            self.refreshControl?.endRefreshing()
+            //print("reload")
+            self.tableView?.reloadData()
+        })
     }
     
     func showFriends(){

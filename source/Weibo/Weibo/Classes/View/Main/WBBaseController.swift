@@ -12,6 +12,7 @@ import UIKit
 
 class WBBaseController: UIViewController{
     var tableView: UITableView?
+    var refreshControl: UIRefreshControl?
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0,y:0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -51,6 +52,14 @@ extension WBBaseController{
         tableView?.delegate = self
         
         tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
+        
+        //set refresh
+        //initialize
+        refreshControl = UIRefreshControl()
+        //add to tableview
+        tableView?.addSubview(refreshControl!)
+        //add listener
+        refreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
     }
     
     private func setupNavigationBar(){
