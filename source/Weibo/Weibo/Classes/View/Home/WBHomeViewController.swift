@@ -8,10 +8,15 @@
 
 import UIKit
 
-class WBHomeViewController: WBBaseController {
+private let cellId = "cellId"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+class WBHomeViewController: WBBaseController {
+    lazy var statusList = [String]()
+    
+    override func loadData() {
+        for i in 0..<15{
+            statusList.insert(i.description, at: 0)
+        }
     }
     
     func showFriends(){
@@ -19,6 +24,23 @@ class WBHomeViewController: WBBaseController {
         let vc = WBDemoViewController()
         //vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+
+// MARK: - table, data source method
+extension WBHomeViewController{
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statusList.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //get cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        //set cell
+        cell.textLabel?.text = statusList[indexPath.row]
+        //return cell
+        return cell
     }
 }
 
@@ -32,5 +54,7 @@ extension WBHomeViewController{
 //        btn.addTarget(self, action: #selector(showFriends), for: .touchUpInside)
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: btn)
         navItem.leftBarButtonItem = UIBarButtonItem(title: "Friends", target: self, action: #selector(showFriends))
+        //注册原型cell
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
     }
 }

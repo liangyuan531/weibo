@@ -22,9 +22,14 @@ class WBBaseController: UIViewController{
         }
     }
     
+    func loadData(){
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loadData()
     }
 }
 
@@ -32,6 +37,8 @@ class WBBaseController: UIViewController{
 extension WBBaseController{
     func setupUI(){
         view.backgroundColor = UIColor.cz_random()
+        //取消自动缩进
+        automaticallyAdjustsScrollViewInsets = false
         setupNavigationBar()
         setupTableView()
     }
@@ -42,6 +49,8 @@ extension WBBaseController{
         //set data source and delegate, in oder to let sub-class implement
         tableView?.dataSource = self
         tableView?.delegate = self
+        
+        tableView?.contentInset = UIEdgeInsets(top: navigationBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
     }
     
     private func setupNavigationBar(){
