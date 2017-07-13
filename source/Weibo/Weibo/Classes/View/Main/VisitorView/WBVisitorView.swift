@@ -17,9 +17,12 @@ class WBVisitorView: UIView {
             }
             tipLabel.text = message
             if imageName == "" {
+                startAnimation()
                 return
             }
             iconView.image = UIImage(named: imageName)
+            houseIconView.isHidden = true
+            maskIconView.isHidden = true
         }
     }
     
@@ -30,6 +33,15 @@ class WBVisitorView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func startAnimation(){
+        let anim = CABasicAnimation(keyPath: "transform.rotation")
+        anim.toValue = 2*Double.pi
+        anim.repeatCount = MAXFLOAT
+        anim.duration = 15
+        anim.isRemovedOnCompletion = false
+        iconView.layer.add(anim, forKey: nil)
     }
     
     // MARK: - 控件
@@ -53,6 +65,10 @@ extension WBVisitorView{
         addSubview(tipLabel)
         addSubview(registerButton)
         addSubview(LoginButton)
+        
+        //文本居中
+        tipLabel.textAlignment = .center
+        
         ////自动布局
         //取消autoresizing
         for v in subviews {

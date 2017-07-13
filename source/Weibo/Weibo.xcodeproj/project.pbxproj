@@ -10,6 +10,7 @@
 		EC0E597D1F0F08F60032419C /* WBDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */; };
 		EC0E597F1F0F162F0032419C /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0E597E1F0F162F0032419C /* UIBarButtonItem+Extensions.swift */; };
 		EC61FD9F1F16FACC0051F8FC /* WBVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC61FD9E1F16FACC0051F8FC /* WBVisitorView.swift */; };
+		EC61FDA11F1746B20051F8FC /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = EC61FDA01F1746B20051F8FC /* main.json */; };
 		EC9A31241EC5E2C2001C4E7C /* WBMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */; };
 		EC9A31261EC5E305001C4E7C /* WBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */; };
 		EC9A31281EC5E339001C4E7C /* WBBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9A31271EC5E339001C4E7C /* WBBaseController.swift */; };
@@ -38,6 +39,7 @@
 		EC0E597C1F0F08F60032419C /* WBDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBDemoViewController.swift; sourceTree = "<group>"; };
 		EC0E597E1F0F162F0032419C /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		EC61FD9E1F16FACC0051F8FC /* WBVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBVisitorView.swift; sourceTree = "<group>"; };
+		EC61FDA01F1746B20051F8FC /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBMainViewController.swift; sourceTree = "<group>"; };
 		EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBNavigationController.swift; sourceTree = "<group>"; };
 		EC9A31271EC5E339001C4E7C /* WBBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBBaseController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		EC61FD9C1F1088250051F8FC /* MainController */ = {
 			isa = PBXGroup;
 			children = (
+				EC61FDA01F1746B20051F8FC /* main.json */,
 				EC9A31231EC5E2C2001C4E7C /* WBMainViewController.swift */,
 				EC9A31251EC5E305001C4E7C /* WBNavigationController.swift */,
 			);
@@ -333,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC61FDA11F1746B20051F8FC /* main.json in Resources */,
 				ECD361281EC480920013E593 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
