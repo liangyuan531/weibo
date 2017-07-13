@@ -9,6 +9,20 @@
 import UIKit
 
 class WBVisitorView: UIView {
+    var visitorInfo: [String: String]?{
+        didSet{
+            guard let imageName = visitorInfo?["imageName"],
+                let message = visitorInfo?["message"] else{
+                    return
+            }
+            tipLabel.text = message
+            if imageName == "" {
+                return
+            }
+            iconView.image = UIImage(named: imageName)
+        }
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
@@ -17,7 +31,6 @@ class WBVisitorView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     
     // MARK: - 控件
     lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
@@ -33,7 +46,7 @@ class WBVisitorView: UIView {
 // MARK: - setup UI
 extension WBVisitorView{
     func setupUI(){
-        backgroundColor = UIColor.white
+        backgroundColor = UIColor.cz_color(withHex: 0xEDEDED)
         addSubview(iconView)
         addSubview(maskIconView)
         addSubview(houseIconView)
