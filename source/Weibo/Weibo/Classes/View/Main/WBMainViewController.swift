@@ -35,10 +35,19 @@ extension WBMainViewController{
         composeButton.addTarget(self, action: #selector(composeListener), for: .touchUpInside)
     }
     func setupChildControllers(){
-        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
-            let data = NSData(contentsOfFile: path),
-            let array = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [[String: AnyObject]]
-        else{
+        //获取沙盒路径
+        let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let jsonPath = (docDir as NSString).appendingPathComponent("main.json")
+        //加载data
+        var data = NSData(contentsOfFile: jsonPath)
+        //判断data是否有内容，如果没有，说明本地沙盒没有文件
+        if data == nil {
+            //加载本地
+            let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            data = NSData(contentsOfFile: path!)
+        }
+        guard let array = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: AnyObject]]
+            else{
             return
         }
         var arrayM = [UIViewController]()
