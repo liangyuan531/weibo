@@ -15,6 +15,7 @@ class WBBaseController: UIViewController{
     var refreshControl: UIRefreshControl?
     var isPullUp = false
     var userLogon = false
+    var visitorInfoDict: [String: String]?
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0,y:0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -50,6 +51,7 @@ extension WBBaseController{
     private func setupVisitorView(){
         let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
+        visitorView.visitorInfo = visitorInfoDict
     }
     
     private func setupTableView(){

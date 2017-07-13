@@ -36,11 +36,19 @@ extension WBMainViewController{
     }
     func setupChildControllers(){
         let array = [
-            ["clsName":"WBHomeViewController", "title":"Home", "imageName":"home"],
-            ["clsName":"WBMessageViewController", "title":"Message", "imageName":"message_center"],
+            ["clsName":"WBHomeViewController", "title":"Home", "imageName":"home",
+             "visitorInfo":["imageName":"","message":"关注一些人，回这里看看有什么惊喜"]
+            ],
+            ["clsName":"WBMessageViewController", "title":"Message", "imageName":"message_center",
+             "visitorInfo":["imageName":"visitordiscover_image_message","message":"登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"]
+            ],
             ["clsName":"UIViewController"],
-            ["clsName":"WBDiscoverViewController", "title":"Discover", "imageName":"discover"],
-            ["clsName":"WBProfileViewController", "title":"Profile", "imageName":"profile"]
+            ["clsName":"WBDiscoverViewController", "title":"Discover", "imageName":"discover",
+             "visitorInfo":["imageName":"visitordiscover_image_message","message":"登录后，最新、最热微博尽在掌握，不再会与事实潮流擦肩而过"]
+            ],
+            ["clsName":"WBProfileViewController", "title":"Profile", "imageName":"profile",
+             "visitorInfo":["imageName":"visitordiscover_image_profile","message":"登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]
+            ]
         ]
         var arrayM = [UIViewController]()
         for dict in array {
@@ -50,17 +58,20 @@ extension WBMainViewController{
     }
     
     //使用字典创建一个子控制器
-    private func controller(dict : [String : String]) -> UIViewController{
-        guard let clsName = dict["clsName"],
-            let title = dict["title"],
-            let imageName = dict["imageName"],
-            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type
+    private func controller(dict : [String : Any]) -> UIViewController{
+        guard let clsName = dict["clsName"] as? String,
+            let title = dict["title"] as? String,
+            let imageName = dict["imageName"] as? String,
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? WBBaseController.Type,
+            let visitorDict = dict["visitorInfo"] as? [String: String]
             else{
                 return UIViewController()
             }
         //print(cls)
         let vc = cls.init()
         vc.title = title
+        //set visitor info dict
+        vc.visitorInfoDict = visitorDict
         //set image
         vc.tabBarItem.image = UIImage(named: "tabbar_"+imageName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_"+imageName+"_highlighted")?.withRenderingMode(.alwaysOriginal)
