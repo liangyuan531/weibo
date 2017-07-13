@@ -14,6 +14,7 @@ class WBBaseController: UIViewController{
     var tableView: UITableView?
     var refreshControl: UIRefreshControl?
     var isPullUp = false
+    var userLogon = false
     
     lazy var navigationBar = UINavigationBar(frame: CGRect(x: 0,y:0, width: UIScreen.cz_screenWidth(), height: 64))
     lazy var navItem = UINavigationItem()
@@ -38,11 +39,18 @@ class WBBaseController: UIViewController{
 // MARK: - setup interface
 extension WBBaseController{
     func setupUI(){
-        view.backgroundColor = UIColor.cz_random()
+        view.backgroundColor = UIColor.white
         //取消自动缩进
         automaticallyAdjustsScrollViewInsets = false
         setupNavigationBar()
-        setupTableView()
+        userLogon ? setupTableView() : setupVisitorView()
+    }
+    
+    //设置访客视图
+    private func setupVisitorView(){
+        let visitorView = UIView(frame: view.bounds)
+        visitorView.backgroundColor = UIColor.cz_random()
+        view.insertSubview(visitorView, belowSubview: navigationBar)
     }
     
     private func setupTableView(){
