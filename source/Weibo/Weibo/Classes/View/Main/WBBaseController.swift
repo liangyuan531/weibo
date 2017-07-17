@@ -37,6 +37,15 @@ class WBBaseController: UIViewController{
     }
 }
 
+extension WBBaseController{
+    func login(){
+        print("login")
+    }
+    func register(){
+        print("register")
+    }
+}
+
 // MARK: - setup interface
 extension WBBaseController{
     func setupUI(){
@@ -51,10 +60,17 @@ extension WBBaseController{
     private func setupVisitorView(){
         let visitorView = WBVisitorView(frame: view.bounds)
         view.insertSubview(visitorView, belowSubview: navigationBar)
+        //设置访客视图信息
         visitorView.visitorInfo = visitorInfoDict
+        visitorView.loginButton.addTarget(self, action: #selector(login), for: .touchUpInside)
+        visitorView.registerButton.addTarget(self, action: #selector(register), for: .touchUpInside)
+        //设置导航按钮
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "register", style: .plain, target: self, action: #selector(register))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "login", style: .plain, target: self, action: #selector(login))
     }
     
-    private func setupTableView(){
+    //子类重写此方法，因为子类不需要关心用户登录之前的逻辑
+    func setupTableView(){
         tableView = UITableView(frame: view.bounds, style: .plain)
         view.insertSubview(tableView!, belowSubview: navigationBar)
         //set data source and delegate, in oder to let sub-class implement

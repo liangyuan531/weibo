@@ -55,8 +55,8 @@ extension WBHomeViewController{
 
 // MARK: - setup interface
 extension WBHomeViewController{
-    override func setupUI() {
-        super.setupUI()
+    override func setupTableView(){
+        super.setupTableView()
         //set navi 
 //        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "friends", style: .plain, target: self, action: #selector(showFriends))
 //        let btn: UIButton = UIButton.cz_textButton("Friends", fontSize: 16, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
